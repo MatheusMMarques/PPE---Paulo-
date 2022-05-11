@@ -1,0 +1,28 @@
+CREATE TABLE endereco{
+   id int Primary key,
+   logadouro String varchar(150),
+   numero int(10) NOTNULL,
+   complemento String varchar(150),
+   bairro String varcahr(30) NOTNULL,
+   cidade String varchar(30) NOTNULL,
+   uf String varcahr(30) NOTNULL,
+};
+
+CREATE TABLE cliente{
+   id int Primary key,
+   nome String varchar(150) NOTNULL,
+   cpf Double varcahr(10) UNIQUE,
+   telefone Double varchar(10) NOTNULL,
+};
+
+CREATE TABLE imóvel{
+   id int Primary key,
+   descrição String varchar(150) NOTNULL,
+   tipo String varchar(50) UNIQUE,
+   valor Float(20) NOTNULL,
+};
+
+CREATE TABLE imobiliária{
+   id int Primary key,
+   nome String varchar(150) NOTNULL,
+};
